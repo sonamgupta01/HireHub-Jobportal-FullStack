@@ -1,0 +1,72 @@
+[
+  {
+    "id": 1,
+    "title": "Frontend Developer",
+    "salary": "Average Salary $42,000 per year",
+    "status": "Job Openings",
+    "skills": "Skills"
+  },
+  {
+    "id": 2,
+    "title": "Backend Developer",
+    "salary": "Average Salary $46,052 per year",
+    "status": "Job Openings",
+    "skills": "Skills"
+  },
+  {
+    "id": 3,
+    "title": "Full Stack Developer",
+    "salary": "Average Salary $100,000 per year",
+    "status": "Job Openings",
+    "skills": "Skills"
+  },
+  {
+    "id": 4,
+    "title": "UI/UX Designer",
+    "salary": "Average Salary $85,000 per year",
+    "status": "Job Openings",
+    "skills": "Skills"
+  },
+  {
+    "id": 5,
+    "title": "Mobile App Developer",
+    "salary": "Average Salary $96,016 per year",
+    "status": "Job Openings",
+    "skills": "Skills"
+  },
+  {
+    "id": 6,
+    "title": "Data Scientist",
+    "salary": "Average Salary $124,000 per year",
+    "status": "Job Openings",
+    "skills": "Skills"
+  },
+  {
+    "id": 7,
+    "title": "AI/ML Engineer",
+    "salary": "Average Salary $150,000 per year",
+    "status": "Job Openings",
+    "skills": "Skills"
+  },
+  {
+    "id": 8,
+    "title": "DevOps Engineer",
+    "salary": "Average Salary $133,000 per year",
+    "status": "Job Openings",
+    "skills": "Skills"
+  },
+  {
+    "id": 9,
+    "title": "Cybersecurity Analyst",
+    "salary": "Average Salary $112,000 per year",
+    "status": "Job Openings",
+    "skills": "Skills"
+  },
+  {
+    "id": 10,
+    "title": "Cloud Solutions Architect",
+    "salary": "Average Salary $145,000 per year",
+    "status": "Job Openings",
+    "skills": "Skills"
+  }
+]
