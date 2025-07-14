@@ -1,3 +1,21 @@
+1. **Clone the repository**
+```bash
+git clone <your-repo-url>
+cd "HireHub Project"
+```
+
+2. **Setup Backend**
+```bash
+cd job-portal-server
+npm install
+```
+
+3. **Setup Frontend**
+```bash
+cd ../job-portal-client
+npm install
+```
+
 
 <img width="1910" height="867" alt="image" src="https://github.com/user-attachments/assets/a5f0f8e0-df27-4d25-ba58-c9c9f1d7466d" />
 Student Side
