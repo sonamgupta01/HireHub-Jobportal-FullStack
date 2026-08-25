@@ -37,7 +37,7 @@ const CreateJob = () => {
         }
 
         // Also try to send to API (for backup/sync)
-        fetch("http://localhost:3000/post-job",{
+        fetch("https://hirehub-jobportal-fullstack.onrender.com/post-job",{
             method : "POST",
             headers : {'content-type' : 'application/json'},
             body : JSON.stringify(jobData)
