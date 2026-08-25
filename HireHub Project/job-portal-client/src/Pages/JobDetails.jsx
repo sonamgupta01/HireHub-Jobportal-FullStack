@@ -48,7 +48,7 @@ const JobDetails = () => {
       // If not found locally, try API
       if (!foundJob) {
         console.log('Job not found locally, trying API...');
-        const response = await fetch(`http://localhost:3000/all-jobs`);
+        const response = await fetch(`https://hirehub-jobportal-fullstack.onrender.com/all-jobs`);
         const apiJobs = await response.json();
         console.log('API jobs:', apiJobs.length);
 
@@ -80,7 +80,7 @@ const JobDetails = () => {
 
   const checkApplicationStatus = async () => {
     try {
-      const response = await fetch(`http://localhost:3000/my-applications/${user.email}`);
+      const response = await fetch(`https://hirehub-jobportal-fullstack.onrender.com/my-applications/${user.email}`);
       const applications = await response.json();
       const hasApplied = applications.some(app => app.jobId === id);
       setIsApplied(hasApplied);
@@ -148,7 +148,7 @@ const JobDetails = () => {
       localStorage.setItem('jobApplications', JSON.stringify(applications));
 
       // Also try to send to backend
-      const response = await fetch('http://localhost:3000/apply-job', {
+      const response = await fetch('https://hirehub-jobportal-fullstack.onrender.com/apply-job', {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',
