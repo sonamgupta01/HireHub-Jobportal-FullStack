@@ -3,6 +3,8 @@
 // username : sonam98450
 // password : Sonam@8848
 
+require('dotenv').config()
+
 const express = require('express')
 const app = express()
 const cors = require('cors')
@@ -11,7 +13,7 @@ const jwt = require('jsonwebtoken')
 
 const port = process.env.PORT || 3000;
 
-require('dotenv').config()
+
 
 console.log("DB User:", process.env.DB_USER)
 
