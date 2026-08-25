@@ -1,7 +1,7 @@
 
 // mongo db
 // username : sonam98450
-// password : Sonam@8848
+
 
 require('dotenv').config()
 
