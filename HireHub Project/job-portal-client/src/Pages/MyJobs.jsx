@@ -84,7 +84,7 @@ const MyJobs = () => {
     }
 
     // Also try API delete (optional)
-    fetch(`http://localhost:3000/job/${id}`, {
+    fetch(`https://hirehub-jobportal-fullstack.onrender.com/job/${id}`, {
       method: "DELETE",
     })
       .then((res) => res.json())
