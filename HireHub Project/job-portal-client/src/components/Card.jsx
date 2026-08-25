@@ -23,7 +23,7 @@ const Card = ({data}) => {
 
   const checkApplicationStatus = async () => {
     try {
-      const response = await fetch(`http://localhost:3000/my-applications/${user.email}`);
+      const response = await fetch(`https://hirehub-jobportal-fullstack.onrender.com/my-applications/${user.email}`);
       const applications = await response.json();
       const hasApplied = applications.some(app => app.jobId === _id);
       setIsApplied(hasApplied);
@@ -50,7 +50,7 @@ const Card = ({data}) => {
 
     setLoading(true);
     try {
-      const response = await fetch('http://localhost:3000/apply-job', {
+      const response = await fetch('https://hirehub-jobportal-fullstack.onrender.com/apply-job', {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',
