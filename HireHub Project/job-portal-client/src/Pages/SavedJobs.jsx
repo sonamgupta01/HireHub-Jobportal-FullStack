@@ -27,7 +27,7 @@ const SavedJobs = () => {
       }
 
       // Fetch all jobs and filter by saved IDs
-      const response = await fetch('http://localhost:3000/all-jobs');
+      const response = await fetch('https://hirehub-jobportal-fullstack.onrender.com/all-jobs');
       const allJobs = await response.json();
       
       const savedJobsList = allJobs.filter(job => savedJobIds.includes(job._id));
