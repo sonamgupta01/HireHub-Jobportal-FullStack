@@ -14,7 +14,7 @@ const AppliedJobs = () => {
   useEffect(() => {
     const fetchAppliedJobs = async () => {
       try {
-        const response = await fetch(`http://localhost:3000/my-applications/${user.email}`);
+        const response = await fetch(`https://hirehub-jobportal-fullstack.onrender.com/my-applications/${user.email}`);
         if (response.ok) {
           const applications = await response.json();
           setAppliedJobs(applications);
