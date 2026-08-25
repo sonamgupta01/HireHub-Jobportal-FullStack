@@ -15,6 +15,7 @@ npm install
 cd ../job-portal-client
 npm install
 ```
+4.**LIVE : **https://delicate-longma-4e2ddd.netlify.app/**
 
 
 <img width="1910" height="867" alt="image" src="https://github.com/user-attachments/assets/a5f0f8e0-df27-4d25-ba58-c9c9f1d7466d" />
