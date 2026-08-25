@@ -1,6 +1,6 @@
 import React from "react";
 import Button from "./Button";
-import InputField from '../components/inputField'
+import InputField from '../components/InputField'
 
 const Salary = ({ handleChange, handleClick }) => {
   return (
