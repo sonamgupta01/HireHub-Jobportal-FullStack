@@ -58,7 +58,7 @@ const Dashboard = () => {
 
           // Also try to fetch from API as backup
           try {
-            const applicationsRes = await fetch(`http://localhost:3000/my-applications/${user.email}`);
+            const applicationsRes = await fetch(`https://hirehub-jobportal-fullstack.onrender.com/my-applications/${user.email}`);
             if (applicationsRes.ok) {
               const apiApplications = await applicationsRes.json();
               if (apiApplications.length > userApplications.length) {
@@ -78,10 +78,10 @@ const Dashboard = () => {
         } else if (isRecruiter()) {
           // Fetch recruiter stats from API
           try {
-            const jobsRes = await fetch(`http://localhost:3000/myJobs/${user.email}`);
+            const jobsRes = await fetch(`https://hirehub-jobportal-fullstack.onrender.com/myJobs/${user.email}`);
             const jobs = await jobsRes.json();
 
-            const applicationsRes = await fetch(`http://localhost:3000/job-applications/${user.email}`);
+            const applicationsRes = await fetch(`https://hirehub-jobportal-fullstack.onrender.com/job-applications/${user.email}`);
             const applications = await applicationsRes.json();
 
             setStats(prev => ({
