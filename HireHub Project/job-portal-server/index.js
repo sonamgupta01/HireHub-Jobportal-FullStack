@@ -1,23 +1,29 @@
 
 // mongo db
 // username : sonam98450
-// password : uXKxQzOOjibnYDGS
-
+// password : Sonam@8848
 
 const express = require('express')
 const app = express()
 const cors = require('cors')
 const bcrypt = require('bcryptjs')
 const jwt = require('jsonwebtoken')
+
 const port = process.env.PORT || 3000;
+
 require('dotenv').config()
-console.log(process.env.DB_USER)
+
+console.log("DB User:", process.env.DB_USER)
 
 app.use(express.json())
 app.use(cors())
 
 const { MongoClient, ServerApiVersion, ObjectId } = require('mongodb');
-const uri = `mongodb+srv://sonam98450:${process.env.DB_PASSWORD}@job-portal-demo.stgsae7.mongodb.net/?retryWrites=true&w=majority&appName=job-portal-demo`;
+
+const username = encodeURIComponent(process.env.DB_USER);
+const password = encodeURIComponent(process.env.DB_PASSWORD);
+
+const uri = `mongodb+srv://${username}:${password}@job-portal-demo.stgsae7.mongodb.net/?retryWrites=true&w=majority&appName=job-portal-demo`;
 
 const client = new MongoClient(uri, {
   serverApi: {
