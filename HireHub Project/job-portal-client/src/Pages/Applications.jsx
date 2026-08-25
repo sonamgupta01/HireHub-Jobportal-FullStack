@@ -93,7 +93,7 @@ const Applications = () => {
 
         // Also try to fetch from backend API if available
         try {
-          const response = await fetch(`http://localhost:3000/job-applications/${user?.email}`);
+          const response = await fetch(`https://hirehub-jobportal-fullstack.onrender.com/job-applications/${user?.email}`);
           if (response.ok) {
             const apiApplications = await response.json();
             console.log('API applications:', apiApplications);
