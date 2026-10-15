@@ -31,6 +31,9 @@ Recruiter Side
 
 
 
-
+React, Node.js, Express.js, MongoDB
+- Engineered a dual-sided recruitment platform with dedicated student and recruiter dashboards, integrating job discovery, saved jobs, application tracking, and job management into a unified workflow.
+- Developed recruiter-side application management and recruitment analytics, featuring candidate filtering, resume viewing and downloads, hiring-status tracking, and dashboard metrics for applications, shortlisted candidates, and recruitment outcomes.
+- Integrated AI-assisted career preparation tools, including a mock interview system, resume builder, market insights, and skills quizzes to help candidates prepare for interviews and explore career opportunities.
 
 
